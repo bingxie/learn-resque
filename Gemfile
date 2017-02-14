@@ -38,6 +38,9 @@ gem 'resque-web', require: 'resque_web'
 
 gem "resque-scheduler"
 
+gem "resque-scheduler-web"
+gem "sinatra", github: 'sinatra/sinatra'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
