@@ -44,6 +44,8 @@ class ArticlesController < ApplicationController
   def update
     respond_to do |format|
       if @article.update(article_params)
+        Resque.enqueue(ExceptionJob)
+
         format.html { redirect_to @article, notice: 'Article was successfully updated.' }
         format.json { render :show, status: :ok, location: @article }
       else
