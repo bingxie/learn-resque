@@ -34,7 +34,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'resque'
 
-gem 'sinatra', github: 'sinatra/sinatra'
+gem 'resque-web', require: 'resque_web'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
