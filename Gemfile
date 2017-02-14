@@ -36,6 +36,8 @@ gem 'resque'
 
 gem 'resque-web', require: 'resque_web'
 
+gem "resque-scheduler"
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
